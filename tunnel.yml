@@ -1,0 +1,10 @@
+tunnel: 4b6c0f87-c1c7-4300-bba6-61a834f89cb0
+credentials-file: ./tunnel.json
+protocol: auto
+
+ingress:
+  - hostname: choreoxxgugu.status-turbojerry.gq
+    service: http://localhost:8001
+    originRequest:
+      noTLSVerify: true
+  - service: http_status:404
